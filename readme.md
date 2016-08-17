@@ -1,6 +1,6 @@
 # Reserve Front End Engineer Code Test
 
-For this code test you are going to make a weather app using [React](https://facebook.github.io/react/) and [Redux](http://redux.js.org/). The application should make use of redux state, action creators, reducers, routing, and persistence with local storage. You should also use [React Toolbox](http://react-toolbox.com/#/) to follow the material design wireframes we've provided. Any assets you need should be included or available through one of the libraries listed below.
+For this code test you are going to make a weather app using [React](https://facebook.github.io/react/) and [Redux](http://redux.js.org/). The application should make use of redux state, action creators, reducers, routing, and persistence with local storage. You should also use [React Toolbox](http://react-toolbox.com/#/) to follow the material design wireframes we've provided. Any assets you need should be included in this repo in the folder "Assets" or available through one of the libraries listed below.
 
 ## Pages
 
