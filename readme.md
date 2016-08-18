@@ -56,4 +56,4 @@ We will be reviewing your submission based on the following:
 
 ## Project Delivery
 
-Please provide adequate instructions to setup and run your submission locally. Files may be provided in a git repo or zipped in an email.
+Please provide adequate instructions to setup and run your submission locally. Please provide your solution zipped via email. Do not host publicly. 
