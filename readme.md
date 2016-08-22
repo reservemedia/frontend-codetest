@@ -8,7 +8,9 @@ For this code test you are going to make a weather app using [React](https://fac
 
 The landing page should have a header bar that lists the current date. It should also have an edit button that is visible if there are any cities listed. Clicking the edit button turns on *edit mode*, which allows the user to remove a city. There should be a [FAB button](https://material.google.com/components/buttons-floating-action-button.html) at the bottom right of the screen that is fixed. Clicking on it should open a dialog box that lets the user search for a city to add to their *favorites* list.
 
-The main body of the landing page is the list of the user's favorite cities. For every city the user has added you should pull the forecast from a weather API and display some data. Clicking on a city card should route the user to a city detail page. There is an empty state in the case that a user doesn't have any favorite cities.
+The main body of the landing page is the list of the user's favorite cities. For every city the user has added you should pull the forecast from a weather API and display some data. The background of the city card should be dynamically created based on the city's current weather. Clicking on a city card should route the user to a city detail page.
+
+There is an empty state in the case that a user doesn't have any favorite cities.
 
 ### Search Dialog
 
@@ -19,6 +21,8 @@ We recommend utilizing the [Google Places Autocomplete API](https://developers.g
 The city detail page should display additional weather information for the chosen city. The header on the detail page should change to display the name of the city with a close icon to go back to the main list. The [FAB button](https://material.google.com/components/buttons-floating-action-button.html) should not be displayed on the city detail page.
 
 There should be a snapshot of today with information about the current weather, as well as a future six-day forecast.
+
+The background color of the city detail page should be dynamically determined based on the city's current weather, just like on the landing page. 
 
 ### Additional Criteria
 
@@ -56,4 +60,4 @@ We will be reviewing your submission based on the following:
 
 ## Project Delivery
 
-Please provide adequate instructions to setup and run your submission locally. Please provide your solution zipped via email. Do not host publicly. 
+Please provide adequate instructions to setup and run your submission locally. Please provide your solution zipped via email. Do not host publicly.
