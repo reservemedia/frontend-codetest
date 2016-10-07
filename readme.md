@@ -2,6 +2,34 @@
 
 For this code test you are going to make a weather app using [React](https://facebook.github.io/react/) and [Redux](http://redux.js.org/). The application should make use of redux state, action creators, reducers, routing, and persistence with local storage. You should also use [React Toolbox](http://react-toolbox.com/#/) to follow the material design wireframes we've provided. Any assets you need should be included in this repo in the folder "Assets" or available through one of the libraries listed below.
 
+## Getting Started
+
+We have provided with you with the app's basic boilerplate and webpack configurations. You should only have to build any necessary components, action creators, reducers, etc. [React Hot Loader](https://github.com/gaearon/react-hot-loader) is enabled as well, so saving a component should update it in the browser.  
+
+### Installation
+
+Make sure you have Node >= v4.0. Then run the following commands:
+
+```
+npm install
+npm start
+```
+
+The app will start on `localhost:3000`.
+
+### Styles
+
+This app makes use of PostCSS and basic [CSS Modules](https://github.com/webpack/css-loader). We have included the following PostCSS plugins:
+
+* [precss](https://github.com/jonathantneal/precss)
+* [postcss-calc](https://github.com/postcss/postcss-calc)
+* [AutoPrefixer](https://github.com/postcss/autoprefixer)
+
+### React Toolbox
+We have pre-loaded the [React-Toolbox](http://react-toolbox.com/) library for you. This library provides you with many pre-built Material Design components that you can import as needed.
+
+You can override any React Toolbox settings in `src/theme/_config.scss`.
+
 ## Pages
 
 ### Landing Page
