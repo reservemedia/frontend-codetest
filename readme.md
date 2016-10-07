@@ -22,7 +22,7 @@ The city detail page should display additional weather information for the chose
 
 There should be a snapshot of today with information about the current weather, as well as a future six-day forecast.
 
-The background color of the city detail page should be dynamically determined based on the city's current weather, just like on the landing page. 
+The background color of the city detail page should be dynamically determined based on the city's current weather, just like on the landing page.
 
 ### Additional Criteria
 
