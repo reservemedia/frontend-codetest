@@ -1,0 +1,44 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+    "plugin:react/recommended"
+    # "standard-react"
+  ],
+  "plugins": [
+    "react", "import"
+  ],
+  "env"     : {
+    "browser" : true,
+  },
+  "globals" : {
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__COVERAGE__" : false,
+    "__BASENAME__" : false,
+  },
+  "rules": {
+    "react/no-multi-comp": 0,
+    "import/default": 0,
+    "import/no-duplicates": 0,
+    "import/named": 0,
+    "import/namespace": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 0,
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "no-console": 0,
+    "no-alert": 0,
+    "space-before-function-paren": [2, "never"],
+    "semi": [2, "always"],
+    "template-curly-spacing": [2, "always"],
+    "object-curly-spacing": [2, "always"],
+    "react/jsx-curly-spacing": [2, "always"],
+    "react/jsx-space-before-closing": [2, "always"],
+    "quote-props": [2, "as-needed", { "keywords": true }],
+    "react/display-name": 0,
+    "comma-dangle": [2, "always-multiline"],
+    "padded-blocks": [0],
+    "no-multiple-empty-lines": [0],
+  }
+}
