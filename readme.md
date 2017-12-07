@@ -1,12 +1,7 @@
 # Reserve Front End Engineer Code Test
 
-For this code test you are going to make a weather app using
+For this code test you will be creating a weather application with
 [React](https://facebook.github.io/react/) and [Redux](http://redux.js.org/).
-The application should make use of redux state, action creators, reducers,
-routing, and persistence with local storage. You should also use
-[React Toolbox](http://react-toolbox.com/#/) to follow the material design
-wireframes we've provided. Any assets you need should be included in this repo
-in the folder "Assets" or available through one of the libraries listed below.
 
 ## Getting Started
 
@@ -15,6 +10,11 @@ configurations. You should only have to build any necessary components, action
 creators, reducers, etc.
 [React Hot Loader](https://github.com/gaearon/react-hot-loader) is enabled as
 well, so saving a component should update it in the browser.
+
+### Designs
+
+* [Sketch](https://www.sketchapp.com)
+* [Wireframes](https://github.com/reservemedia/frontend-codetest/blob/master/Reserve_Code_Test_0816_2.sketch)
 
 ### Installation
 
@@ -39,9 +39,8 @@ following PostCSS plugins:
 
 ### React Toolbox
 
-We have pre-loaded the [React-Toolbox](http://react-toolbox.io/) library for
-you. This library provides you with many pre-built Material Design components
-that you can import as needed.
+We have included the [React-Toolbox](http://react-toolbox.io/) which provides
+many Material Design components that you may import.
 
 You can override any React Toolbox settings in `src/theme/_config.scss`.
 
@@ -97,11 +96,11 @@ you via [Zeplin](https://zeplin.io/).
 
 ## Libraries
 
-* [Forecast.io](https://developer.forecast.io/) - This is the weather API I
-  recommend. It provides a ton of weather data and allows for up to 1000 API
-  calls per day for free. The main downside with this API is that it has CORS
-  preventing requests directly from the browser. If you want to use this library
-  you can clone a
+* [Forecast.io](https://developer.forecast.io/) - This is the weather API we
+  recommend. It provides weather data and allows for up to 1000 API calls per
+  day for free. The main downside with this API is that it has CORS preventing
+  requests directly from the browser. If you want to use this library you can
+  clone a
   [simple reverse proxy server](https://github.com/jasonleibowitz/wthr.ly-api)
   we created. Spin it up locally and send all API requests through that server
   instead of directly through Forecast.io. Alternatively, you can use any other
@@ -128,6 +127,9 @@ We will be reviewing your submission based on the following:
 * Proper usage of libraries and frameworks.
 
 ## Project Delivery
+
+* We should be able to setup your submission by running `npm install .; npm
+  start`.
 
 Please provide adequate instructions to setup and run your submission locally.
 Please provide your solution zipped via email. Do not host publicly.
