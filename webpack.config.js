@@ -55,9 +55,7 @@ const config = {
     new webpack.DefinePlugin({
       // Note: process.env vars must be quoted!
       'process.env.NODE_ENV': '"development"',
-      'process.env.API_KEY': process.env.API_KEY
-        ? `"${ process.env.API_KEY }"`
-        : 'undefined',
+      'process.env.API_KEY': process.env.API_KEY,
       __CLIENT__: true,
       __SERVER__: false,
       __DEV__: true,

@@ -1,17 +1,13 @@
-// Module
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const jsonServer = require('express')();
-const path = require('path');
 const request = require('request');
-
-// File
 const config = require('./webpack.config');
-
 const host = 'localhost';
 const port = 3000;
+const apiPort = 8080;
 
-const server = new WebpackDevServer(webpack(config), {
+new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
   historyApiFallback: true,
@@ -19,12 +15,12 @@ const server = new WebpackDevServer(webpack(config), {
     colors: true,
   },
 }).listen(port, host, function(err, result) {
-  if (err) console.log(err);
+  if (err) console.error(err);
   console.log(`Dev Server Listening at http://${ host }:${ port }`);
 });
 
-jsonServer.listen(8080, () =>
-  console.log(`API Server Listening at http://${ host }:8080`)
+jsonServer.listen(apiPort, () =>
+  console.log(`API Server Listening at http://${ host }:${ apiPort }`)
 );
 jsonServer.get('/forecast/:latlong', (req, res, next) => {
   const latlong = req.params.latlong;
@@ -36,8 +32,6 @@ jsonServer.get('/forecast/:latlong', (req, res, next) => {
   }
   res.append('Access-Control-Allow-Origin', '*');
   request(
-    `https://api.darksky.net/forecast/${ process.env.API_KEY }/${
-      req.params.latlong
-    }`
+    `https://api.darksky.net/forecast/${ process.env.API_KEY }/${ latlong }`
   ).pipe(res);
 });
