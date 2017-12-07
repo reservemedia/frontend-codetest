@@ -98,14 +98,7 @@ you via [Zeplin](https://zeplin.io/).
 
 * [Forecast.io](https://developer.forecast.io/) - This is the weather API we
   recommend. It provides weather data and allows for up to 1000 API calls per
-  day for free. The main downside with this API is that it has CORS preventing
-  requests directly from the browser. If you want to use this library you can
-  clone a
-  [simple reverse proxy server](https://github.com/jasonleibowitz/wthr.ly-api)
-  we created. Spin it up locally and send all API requests through that server
-  instead of directly through Forecast.io. Alternatively, you can use any other
-  weather API you choose, as long as it provides the data required in the
-  designs.
+  day for free.
 * [Google Places Autocomplete](https://developers.google.com/places/web-service/autocomplete) -
   [React Geosuggest](https://github.com/ubilabs/react-geosuggest) is a great
   library that implements the Google Places API. You can use this library to
