@@ -16,14 +16,17 @@ const resolve = path.resolve;
 const root = resolve(__dirname);
 const src = join(root, 'src');
 
-const makePcssLoader = (env) => {
-  const localIdentName = (env === 'test') ? '[local]' : '[name]---[local]---[hash:base64:5]';
+const makePcssLoader = env => {
+  const localIdentName =
+    env === 'test' ? '[local]' : '[name]---[local]---[hash:base64:5]';
   return {
     // Matches local styles (excludes node_modules)
-    test: /\.pcss$/,
+    test: /\.css$/,
     loaders: [
       'style-loader',
-      `css-loader?sourceMap&modules&camelCase&importLoaders=1&localIdentName=${ localIdentName }`,
+      `css-loader?sourceMap&modules&camelCase&importLoaders=1&localIdentName=${
+        localIdentName
+      }`,
       'postcss-loader',
     ],
     exclude: path.resolve(__dirname, 'node_modules'),
@@ -52,7 +55,7 @@ const config = {
     new webpack.DefinePlugin({
       // Note: process.env vars must be quoted!
       'process.env.NODE_ENV': '"development"',
-      'process.env.API_KEY': process.env.API_KEY ? `"${ process.env.API_KEY }"` : 'undefined',
+      'process.env.API_KEY': process.env.API_KEY,
       __CLIENT__: true,
       __SERVER__: false,
       __DEV__: true,
@@ -156,12 +159,8 @@ const config = {
 
   // Loader Configs
   postcss() {
-    // These plugins are applied to .pcss files (in reverse order)
-    return [
-      precss,
-      postcssCalc,
-      autoprefixer,
-    ];
+    // These plugins are applied to .css files (in reverse order)
+    return [precss, postcssCalc, autoprefixer];
   },
   sassLoader: {
     data: `@import "${ path.resolve(__dirname, 'src/theme/_config.scss') }";`,

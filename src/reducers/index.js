@@ -1,10 +1,7 @@
-// Module
 import { combineReducers } from 'redux';
 
-// File
-
-const rootReducer = combineReducers({
-
+const combinedReducers = combineReducers({
+  exampleReducer: (state = {}) => state,
 });
 
-export default rootReducer;
+export default combinedReducers;
