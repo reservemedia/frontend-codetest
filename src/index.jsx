@@ -1,4 +1,3 @@
-// Module
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
@@ -7,14 +6,10 @@ import { Router, browserHistory } from 'react-router';
 import createLogger from 'redux-logger';
 import reduxThunk from 'redux-thunk';
 import RedBox from 'redbox-react';
-
-// File
 import routes from './routes';
 import reducer from './reducers';
-
-// Import global stylesheets (as side-effects)
 import 'react-toolbox/lib/commons.scss';
-import './theme/global.pcss';
+import './theme/global.css';
 
 // Create array of redux middleware
 const middleware = [reduxThunk];

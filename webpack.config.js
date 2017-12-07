@@ -20,7 +20,7 @@ const makePcssLoader = (env) => {
   const localIdentName = (env === 'test') ? '[local]' : '[name]---[local]---[hash:base64:5]';
   return {
     // Matches local styles (excludes node_modules)
-    test: /\.pcss$/,
+    test: /\.css$/,
     loaders: [
       'style-loader',
       `css-loader?sourceMap&modules&camelCase&importLoaders=1&localIdentName=${ localIdentName }`,
@@ -156,7 +156,7 @@ const config = {
 
   // Loader Configs
   postcss() {
-    // These plugins are applied to .pcss files (in reverse order)
+    // These plugins are applied to .css files (in reverse order)
     return [
       precss,
       postcssCalc,

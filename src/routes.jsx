@@ -1,11 +1,5 @@
-// Module
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
-
-// File
+import { Route } from 'react-router';
 import App from 'components/App/App';
 
-export default (
-  <Route path="/" component={ App }>
-  </Route>
-);
+export default <Route path="/" component={ App } />;
