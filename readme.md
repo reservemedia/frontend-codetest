@@ -87,13 +87,6 @@ as well as a future six-day forecast.
 The background color of the city detail page should be dynamically determined
 based on the city's current weather, just like on the landing page.
 
-## Design
-
-Bundled with this code test you should find a Sketch file with wireframes. You
-can download a fully functional free trial of Sketch from
-[their website](https://www.sketchapp.com/). We can also share wireframes with
-you via [Zeplin](https://zeplin.io/).
-
 ## Libraries
 
 * [Forecast.io](https://developer.forecast.io/) - This is the weather API we
