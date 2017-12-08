@@ -3,7 +3,6 @@
   "extends" : [
     "standard",
     "plugin:react/recommended"
-    # "standard-react"
   ],
   "plugins": [
     "react", "import"
